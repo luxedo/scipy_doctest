@@ -190,3 +190,10 @@ def test_cmplx_nan():
     >>> 1j*np.complex128(np.nan)
     np.complex128(nan+nanj)
     """
+
+
+def test_list_tail_bug():
+    """
+    >>> [1, 2, 3]
+    [1, 2, 3, "a"]
+    """
